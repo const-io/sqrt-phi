@@ -25,7 +25,18 @@
   "keywords": [
     "compute.io",
     "compute",
-    "computation"
+    "computation",
+    "golden",
+    "ratio",
+    "phi",
+    "tau",
+    "golden mean",
+    "golden section",
+    "divine section",
+    "golden cut",
+    "constant",
+    "const",
+    "sqrt"
   ],
   "bugs": {
     "url": "https://github.com/compute-io/const-sqrt-phi/issues"

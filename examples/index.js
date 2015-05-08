@@ -1,3 +1,5 @@
 'use strict';
 
-var foo = require( './../lib' );
+var sqrt_phi = require( './../lib' );
+
+console.log( sqrt_phi );

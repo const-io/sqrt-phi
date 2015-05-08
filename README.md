@@ -1,8 +1,8 @@
-const-sqrt-phi
+SQRT PHI
 ===
 [![NPM version][npm-image]][npm-url] [![Build Status][travis-image]][travis-url] [![Coverage Status][coveralls-image]][coveralls-url] [![Dependencies][dependencies-image]][dependencies-url]
 
-> Square root of the golden ratio.
+> Square root of the [Golden ratio](http://en.wikipedia.org/wiki/Golden_ratio) (phi).
 
 
 ## Installation
@@ -17,18 +17,24 @@ For use in the browser, use [browserify](https://github.com/substack/node-browse
 ## Usage
 
 ``` javascript
-var foo = require( 'compute-const-sqrt-phi' );
+var sqrt_phi = require( 'compute-const-sqrt-phi' );
 ```
 
-#### foo( arr )
+#### sqrt_phi
 
-What does this function do?
+Square root of the [golden ratio](http://oeis.org/A139339).
+
+``` javascript
+sqrt_phi === 1.272019649514069;
+```
 
 
 ## Examples
 
 ``` javascript
-var foo = require( 'compute-const-sqrt-phi' );
+var sqrt_phi = require( 'compute-const-sqrt-phi' );
+
+console.log( sqrt_phi );
 ```
 
 To run the example code from the top-level application directory,
