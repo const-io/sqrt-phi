@@ -8,14 +8,14 @@ SQRT PHI
 ## Installation
 
 ``` bash
-$ npm install compute-const-sqrt-phi
+$ npm install const-sqrt-phi
 ```
 
 
 ## Usage
 
 ``` javascript
-var SQRT_PHI = require( 'compute-const-sqrt-phi' );
+var SQRT_PHI = require( 'const-sqrt-phi' );
 ```
 
 #### SQRT_PHI
@@ -30,7 +30,7 @@ SQRT_PHI === 1.272019649514069;
 ## Examples
 
 ``` javascript
-var SQRT_PHI = require( 'compute-const-sqrt-phi' );
+var SQRT_PHI = require( 'const-sqrt-phi' );
 
 console.log( SQRT_PHI );
 // returns 1.272019649514069
@@ -100,8 +100,8 @@ $ make view-browser-tests
 Copyright &copy; 2015-2016. The [Compute.io][compute-io] Authors.
 
 
-[npm-image]: http://img.shields.io/npm/v/compute-const-sqrt-phi.svg
-[npm-url]: https://npmjs.org/package/compute-const-sqrt-phi
+[npm-image]: http://img.shields.io/npm/v/const-sqrt-phi.svg
+[npm-url]: https://npmjs.org/package/const-sqrt-phi
 
 [build-image]: http://img.shields.io/travis/const-io/sqrt-phi/master.svg
 [build-url]: https://travis-ci.org/const-io/sqrt-phi
