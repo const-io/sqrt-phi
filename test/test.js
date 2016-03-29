@@ -1,27 +1,27 @@
-/* global require, describe, it */
 'use strict';
 
 // MODULES //
 
-var // Expectation library:
-	chai = require( 'chai' ),
-
-	// Module to be tested:
-	CONST = require( './../lib' );
-
-
-// VARIABLES //
-
-var expect = chai.expect,
-	assert = chai.assert;
+var tape = require( 'tape' );
+var sqrt = require( 'math-sqrt' );
+var PHI = require( 'const-phi' );
+var SQRT_PHI = require( './../lib' );
 
 
 // TESTS //
 
-describe( 'compute-const-sqrt-phi', function tests() {
+tape( 'main export is a number', function test( t ) {
+	t.ok( true, __filename );
+	t.equal( typeof SQRT_PHI, 'number', 'main export is a number' );
+	t.end();
+});
 
-	it( 'should export a number', function test() {
-		expect( CONST ).to.be.a( 'number' );
-	});
+tape( 'export is a double-precision floating-point number equal to 1.272019649514069', function test( t ) {
+	t.equal( SQRT_PHI, 1.272019649514069, 'equals 1.272019649514069' );
+	t.end();
+});
 
+tape( 'the exported value equals sqrt(φ)', function test( t ) {
+	t.equal( SQRT_PHI, sqrt(PHI), 'equals sqrt(φ)' );
+	t.end();
 });

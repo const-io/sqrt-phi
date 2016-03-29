@@ -1,5 +1,6 @@
 'use strict';
 
-var sqrt_phi = require( './../lib' );
+var SQRT_PHI = require( './../lib' );
 
-console.log( sqrt_phi );
+console.log( SQRT_PHI );
+// returns 1.272019649514069

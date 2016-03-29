@@ -1,8 +1,8 @@
 SQRT PHI
 ===
-[![NPM version][npm-image]][npm-url] [![Build Status][travis-image]][travis-url] [![Coverage Status][coveralls-image]][coveralls-url] [![Dependencies][dependencies-image]][dependencies-url]
+[![NPM version][npm-image]][npm-url] [![Build Status][build-image]][build-url] [![Coverage Status][coverage-image]][coverage-url] [![Dependencies][dependencies-image]][dependencies-url]
 
-> Square root of the [Golden ratio](http://en.wikipedia.org/wiki/Golden_ratio) (phi).
+> Square root of the [Golden ratio][phi] (φ).
 
 
 ## Installation
@@ -11,30 +11,29 @@ SQRT PHI
 $ npm install compute-const-sqrt-phi
 ```
 
-For use in the browser, use [browserify](https://github.com/substack/node-browserify).
-
 
 ## Usage
 
 ``` javascript
-var sqrt_phi = require( 'compute-const-sqrt-phi' );
+var SQRT_PHI = require( 'compute-const-sqrt-phi' );
 ```
 
-#### sqrt_phi
+#### SQRT_PHI
 
-Square root of the [golden ratio](http://oeis.org/A139339).
+Square root of the [golden ratio][phi].
 
 ``` javascript
-sqrt_phi === 1.272019649514069;
+SQRT_PHI === 1.272019649514069;
 ```
 
 
 ## Examples
 
 ``` javascript
-var sqrt_phi = require( 'compute-const-sqrt-phi' );
+var SQRT_PHI = require( 'compute-const-sqrt-phi' );
 
-console.log( sqrt_phi );
+console.log( SQRT_PHI );
+// returns 1.272019649514069
 ```
 
 To run the example code from the top-level application directory,
@@ -44,11 +43,12 @@ $ node ./examples/index.js
 ```
 
 
+---
 ## Tests
 
 ### Unit
 
-Unit tests use the [Mocha](http://mochajs.org/) test framework with [Chai](http://chaijs.com) assertions. To run the tests, execute the following command in the top-level application directory:
+This repository uses [tape][tape] for unit tests. To run the tests, execute the following command in the top-level application directory:
 
 ``` bash
 $ make test
@@ -59,7 +59,7 @@ All new feature development should have corresponding unit tests to validate cor
 
 ### Test Coverage
 
-This repository uses [Istanbul](https://github.com/gotwarlost/istanbul) as its code coverage tool. To generate a test coverage report, execute the following command in the top-level application directory:
+This repository uses [Istanbul][istanbul] as its code coverage tool. To generate a test coverage report, execute the following command in the top-level application directory:
 
 ``` bash
 $ make test-cov
@@ -72,31 +72,57 @@ $ make view-cov
 ```
 
 
+### Browser Support
+
+This repository uses [Testling][testling] for browser testing. To run the tests in a (headless) local web browser, execute the following command in the top-level application directory:
+
+``` bash
+$ make test-browsers
+```
+
+To view the tests in a local web browser,
+
+``` bash
+$ make view-browser-tests
+```
+
+<!-- [![browser support][browsers-image]][browsers-url] -->
+
+
 ---
 ## License
 
-[MIT license](http://opensource.org/licenses/MIT). 
+[MIT license](http://opensource.org/licenses/MIT).
 
 
 ## Copyright
 
-Copyright &copy; 2015. Athan Reines.
+Copyright &copy; 2015-2016. The [Compute.io][compute-io] Authors.
 
 
 [npm-image]: http://img.shields.io/npm/v/compute-const-sqrt-phi.svg
 [npm-url]: https://npmjs.org/package/compute-const-sqrt-phi
 
-[travis-image]: http://img.shields.io/travis/compute-io/const-sqrt-phi/master.svg
-[travis-url]: https://travis-ci.org/compute-io/const-sqrt-phi
+[build-image]: http://img.shields.io/travis/const-io/sqrt-phi/master.svg
+[build-url]: https://travis-ci.org/const-io/sqrt-phi
 
-[coveralls-image]: https://img.shields.io/coveralls/compute-io/const-sqrt-phi/master.svg
-[coveralls-url]: https://coveralls.io/r/compute-io/const-sqrt-phi?branch=master
+[coverage-image]: https://img.shields.io/codecov/c/github/const-io/sqrt-phi/master.svg
+[coverage-url]: https://codecov.io/github/const-io/sqrt-phi?branch=master
 
-[dependencies-image]: http://img.shields.io/david/compute-io/const-sqrt-phi.svg
-[dependencies-url]: https://david-dm.org/compute-io/const-sqrt-phi
+[dependencies-image]: http://img.shields.io/david/const-io/sqrt-phi.svg
+[dependencies-url]: https://david-dm.org/const-io/sqrt-phi
 
-[dev-dependencies-image]: http://img.shields.io/david/dev/compute-io/const-sqrt-phi.svg
-[dev-dependencies-url]: https://david-dm.org/dev/compute-io/const-sqrt-phi
+[dev-dependencies-image]: http://img.shields.io/david/dev/const-io/sqrt-phi.svg
+[dev-dependencies-url]: https://david-dm.org/dev/const-io/sqrt-phi
 
-[github-issues-image]: http://img.shields.io/github/issues/compute-io/const-sqrt-phi.svg
-[github-issues-url]: https://github.com/compute-io/const-sqrt-phi/issues
+[github-issues-image]: http://img.shields.io/github/issues/const-io/sqrt-phi.svg
+[github-issues-url]: https://github.com/const-io/sqrt-phi/issues
+
+[tape]: https://github.com/substack/tape
+[istanbul]: https://github.com/gotwarlost/istanbul
+[testling]: https://ci.testling.com
+
+[compute-io]: https://github.com/compute-io/
+
+[phi]: https://github.com/const-io/phi
+[sqrt-phi]: http://oeis.org/A139339
