@@ -1,6 +1,6 @@
 {
   "name": "compute-const-sqrt-phi",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "Square root of the golden ratio.",
   "author": {
     "name": "Athan Reines",
